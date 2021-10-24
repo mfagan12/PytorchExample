@@ -47,10 +47,13 @@ def get_optimizer(optimizer_string: str, model_parameters, learning_rate: float)
 
 def get_loss(loss_string: str):
     """
-    Get loss from name string. Supported loss names: cross_entropy.
+    Get loss from name string. Supported loss names: cross_entropy,
+    binary_cross_entropy, mean_squared_error.
     """
     losses = {
         "cross_entropy": torch.nn.CrossEntropyLoss(),
+        "binary_cross_entropy": torch.nn.BCELoss(),
+        "mean_squared_error": torch.nn.MSELoss(),
     }
     return losses[loss_string.lower()]
 

@@ -1,4 +1,4 @@
-name: pytorch_practice
+name: pytorch
 channels:
   - conda-forge
   - pytorch

@@ -1,4 +1,4 @@
-# PyTorch best practices template
+# PyTorch boilerplate template
 
 PyTorch seems to include a lot of boilerplate compared to something like
 Keras, and this boilerplate is often straightforward between (simple)
